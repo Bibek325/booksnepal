@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Jomolhari|Sigmar+One|Special+Elite|Trochut&display=swap');
+.OurMission{
+	background-color: #F5F5F6;
+	margin-top: 5vh;
+	width:80%;
+	text-align:center;
+	margin-left: 10vw;
+}
+.Header{
+	font-size: 20px;
+	text-align:center;
+	font-family: 'Sigmar One', cursive;
+}
+@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
+.Body{
+	
+	font-family: 'Jomolhari', serif;
+	
+	
+	
+}

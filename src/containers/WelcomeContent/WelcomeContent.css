@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
+
+.Particles{
+	position: absolute;
+	width:80%;
+	height: 70vh;
+	
+}
+.Circle1,.Circle2,.Circle3,.Circle4{
+	position: absolute;
+	border:1px solid black;
+	border-radius: 50%;
+	width:2vh;
+	left: 5.5%;
+	height: 2vh;
+	background-color:#1DA3E5;
+	opacity: .7;
+}
+.Eye1{
+	position: absolute;
+	left:78vw;
+	z-index: 1000;
+	top:51vh;
+	height: 3vh;
+	width: 2vw;
+	border-radius: 50%;
+	opacity: .5;
+	overflow:hidden;
+}
+.Eye2{
+	position: absolute;
+	left:83vw;
+	opacity: .5;
+	z-index: 1000;
+	top:51vh;
+	height: 3vh;
+	width: 2vw;
+	border-radius: 50%;
+	
+	overflow:hidden;
+}
+.EyeImg{
+	height: 3vh;
+	width: 2vw;
+}
+.Div1,.Div2,.Div3,.Div4{
+	position: absolute;
+	height: 1vh;
+	margin-top:3%;
+	left:4%;
+	width: 2vw;
+	background-color: black;
+	border:1px solid black;
+	border-radius: 34px 34px 34px 34px;
+	opacity: .9;
+
+}
+.Div2{
+	margin-top:9.4%; ;
+}
+.Div3{
+	margin-top:26%; ;
+}.Div4{
+	margin-top:32.4% ;
+}
+.Circle1{
+	margin-top:2.8%; 
+}
+.Circle2{
+	margin-top:9.2%;
+	
+}
+.Circle3{
+	margin-top:25.8%;
+}
+.Circle4{
+	margin-top:32.2%;
+}
+.welcomeContent{
+
+	overflow: hidden;
+	margin-top:1vh;
+	margin:1vh 1vh;
+	border-radius: 20px;
+	background-color:#5CDB95;
+font-family: 'Turret Road', cursive;
+	height: 74vh;
+	width: 99%;
+	overflow: hidden;
+	justify-content: space-around;
+	display: flex;
+	box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.6);
+}
+.Welcome{
+	
+}
+.Feedback{
+	background-color: #05386B;
+	border-radius: 0px 20px 20px 0px;
+	position: absolute;
+	top:50vh;
+	left:5%;
+
+
+}
+
+.head{
+	margin-top: 14vh;
+	font-family: 'Fondamento', cursive;
+	font-size: 40px;
+}
+.body{
+	text-align: left;
+	margin-top: -2vh;
+	opacity: .8;
+font-family: 'Turret Road', cursive;
+
+
+
+}
+.KtaImage{
+	
+	position: absolute;
+	left: 65vw;
+	overflow: hidden;
+}
+.KtaImg{
+	padding-top: 1px;
+	height: 75vh;
+	width: 30vw;
+}
+.FeedBackLogo{
+	margin-left: 0vw;
+	height: 18vh;
+	width:1.5vw;
+	padding: 0 .9vw; 
+
+}
+.content{
+	
+	box-sizing: border-box;
+	color: ;
+	background-color: ;
+	width: 52%;
+	
+}
+.contentList{
+	padding-left: 150px;
+}
+button::focus{
+	display: none;
+}
+.list{
+	opacity: .8;
+}
+.button{
+	text-align: center;
+	padding-top: 2vh;
+	cursor: pointer;
+	position: absolute;
+	top:85vh;
+	left:15vw;
+	box-shadow: 3px 5px 2px rgba(0,0,0,0.3);
+	margin-top:10px;
+	border-radius: 30px;
+	background:transparent; 
+	border:none;
+	border: .4px solid #05386B;
+	margin-left: 10vw;
+	height: 8vh;
+	z-index:;
+	opacity: .8;
+	width: 20vw;
+	color: white;
+	font-size: 20px;
+	font-family: 'Noto Sans', sans-serif;
+}
+@media(max-width: 500px){
+	.head{
+		font-size: 20px; 
+		margin-top: 5vh;
+	}
+	.body{
+		font-size:12px;
+	}
+	.welcomeContent{
+		height: 40vh;
+	}
+	ul{
+		font-size: 12px;
+		margin-left: -30vw;	}
+	.KtaImage{
+		left:60vw;
+	}
+	.KtaImg{
+		height: 40vh;
+		width: 40vw;
+
+	}
+	.Circle1,.Circle2,.Circle3,.Circle4,.Div1,.Div2,.Div3,.Div4{
+		display: none;
+	}
+	.button{
+		display: none;
+		font-size: 10px;
+		height: 6vh;
+		width: 20vw;
+	}
+	.Feedback{
+		top:33vh;
+		left:0px;
+		border-radius: 0px 10px 10px 0px;
+
+	}
+	.FeedBackLogo{
+		width:4vw;
+		height: 13vh;
+		padding: 0 .8vw;
+	}
+	.Particles{
+		display: none;
+	}
+	.Eye1,.Eye2{
+		display: none;}
+	
+	
+
+}

@@ -1,0 +1,17 @@
+
+.Team{
+	margin-top: 10vh;
+}
+.Header{
+	font-size: 20px;
+	text-align:center;
+	font-family: 'Sigmar One', cursive;
+}
+.Body{
+	display: flex;
+	
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans&display=swap');
+.MenuItem{
+	font-family: 'Noto Sans', sans-serif;
+	z-index: 1000;
+
+	
+}
+a{
+	text-decoration: none;
+	
+}
+
+.MenuItem a.active{
+	border-bottom:1px solid white;
+	padding: 0 10px;
+	transition: .5s;
+}
+@media(max-width: 500px){
+	.MenuItem{
+		margin-top: 2vh;
+		
+	}
+		.MenuItem a.active{
+	border-bottom:1px solid black;
+	padding: 0 10px;
+	transition: .5s;
+}
+}

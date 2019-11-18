@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono&display=swap');
+
+.Search{
+	font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Mono', monospace;
+	width: 100%;
+	text-align: center;
+	
+}
+.Searchimage{
+	margin-top: 4vh;
+	height: 57vh;
+	width: 50vw;
+}
+.Sorry{
+	margin-top: 4vh;
+	font-size:2vw;
+}
