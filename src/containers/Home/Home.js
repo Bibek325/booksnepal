@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import axios from 'axios'
+import {Element} from 'react-scroll'
 import ErrorHandler from '../../hoc/ErrorHandler/ErrorHandler'
 import Advertisement from '../../components/Advertisement/Advertisement'
 import Trendings from '../../components/ContentCard/Trendings/Trendings'
@@ -44,8 +45,9 @@ class Home extends Component{
 			{content}
 			</div>)
 		return(
-			<div>
+			<div><Element name="Home">
 				{this.state.error ? "Couldn't Load the contents due to Network Error" : home}	
+			</Element>
 			</div>
 		)
 	}
