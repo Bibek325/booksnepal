@@ -39,7 +39,15 @@ class App extends Component{
     scrollToBottom() {
       scroll.scrollToBottom();
     }
-	  
+	   scrollTo(name) {
+    scroller.scrollTo(name, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
+  }
+
+
   render(){
     var d= new Date();
     let Hour=d.getHours();

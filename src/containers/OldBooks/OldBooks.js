@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import axios from 'axios'
+import Input from './Input/Input'
 import ErrorHandler from '../../hoc/ErrorHandler/ErrorHandler'
 import Spinner from '../../components/UI/Spinner/Spinner'
 import Contents from '../Contents/Contents'
@@ -20,7 +21,9 @@ class OldBooks extends Component{
 			this.setState({books:fetchBooks,loading:true})
 		})
 	}
-
+	SubmitHandler=()=>{
+		alert("Submit Success")
+	}
 	render(){
 		let content=<Spinner/>
 		if(this.state.loading){
@@ -28,6 +31,7 @@ class OldBooks extends Component{
 		}
 		return(
 			<div className={css.OldBooks}>
+				<Input Submit={this.SubmitHandler}/>
 				{content}
 			</div>
 			);
