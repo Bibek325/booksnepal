@@ -43,8 +43,10 @@
 	height: 6vh;
 	width: 20%;
 	box-sizing: border-box;
-	padding-top: .7vh;
+	
+	
 	color: white;
+	box-sizing: border-box;
 	font-size: 1.4vw;
 	border-right: 2px solid white;
 }

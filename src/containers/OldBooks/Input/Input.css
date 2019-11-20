@@ -6,3 +6,11 @@
 	margin-left:25vw;
 	text-align: center;
 }
+.Image:focus::placeholder{
+	color:transparent;
+}
+.Image{
+	font-size: 12px;
+	width: 20vw;
+	text-align: center;
+}

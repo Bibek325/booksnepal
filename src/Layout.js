@@ -8,6 +8,7 @@ import CategoryItems from './containers/Categories/CategoryItems/CategoryItems'
 import APIResult from './containers/APISearch/APIResult/APIResult'
 import Advertisement from './components/Advertisement/Advertisement'
 import AboutUs from './containers/AboutUs/AboutUs'
+import FeedBackDisplay from './containers/SideMenu/FeedBackDisplay/FeedBackDisplay'
 import Footer from './containers/Footer/Footer'
 import OldBooks from './containers/OldBooks/OldBooks'
 import NewBooks from './containers/NewBooks/NewBooks'
@@ -63,8 +64,10 @@ class App extends Component{
           <div className={css.SideDesign}>{Hour}:{Minutes}<br/>{Month}/{Dates}</div> 
       		
           <Switch>
+            <Route path='/Menu/apiSearch' exact component={APISearch}/>
+            <Route path='/Menu/feedback' exact component={FeedBackDisplay}/>
             <Route path='/Categories/:categories' exact component={CategoryItems}/>
-            <Route path='/API/:api' exact component={APISearch}/>
+            
       			<Route path='/API' exact component={APISearch}/>
             <Route path='/search/:search' exact component={Search}/>
             <Route path='/e-books/CSITSixth' exact component={CsitSixth}/>
