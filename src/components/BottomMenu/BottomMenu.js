@@ -4,6 +4,7 @@ import SideDrawer from '../SideDrawer/SideDrawer'
 import MenuItem from './MenuItem/MenuItem'
 import {Link} from 'react-router-dom'
 import	Categories from '../../containers/Categories/Categories'
+import	SideMenu from '../../containers/SideMenu/SideMenu'
 import css from './BottomMenu.css'
 class BottomMenu extends Component{
 	state={
@@ -54,7 +55,9 @@ class BottomMenu extends Component{
 							<MenuItem item={item} key={key}/>))}
 						
 				</div>
-				<div className={css.ThirdDiv}><Link to='/API' >API Search</Link></div>	
+				<div className={css.ThirdDiv}>
+					<SideMenu clicked={this.showSideDrawerToggleHandler}/>
+				</div>	
 				<div className={css.FourthDiv} onClick={this.showSideMenuBarToggleHandler}>Menu</div>
 			</div>
 			);

@@ -12,7 +12,7 @@ class OldBooks extends Component{
 	}	
 
 	componentWillMount(){
-		axios.get('https://bookstore-12c74.firebaseio.com/OldBooks.json')
+		axios.get('https://bookstore-12c74.firebaseio.com/BooksData.json')
 		.then(res=>{
 			const fetchBooks=[];
 			for(let key in res.data){
@@ -21,9 +21,7 @@ class OldBooks extends Component{
 			this.setState({books:fetchBooks,loading:true})
 		})
 	}
-	SubmitHandler=()=>{
-		alert("Submit Success")
-	}
+	
 	render(){
 		let content=<Spinner/>
 		if(this.state.loading){
@@ -31,7 +29,7 @@ class OldBooks extends Component{
 		}
 		return(
 			<div className={css.OldBooks}>
-				<Input Submit={this.SubmitHandler}/>
+				<Input/>
 				{content}
 			</div>
 			);
