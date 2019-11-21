@@ -6,6 +6,12 @@
 	height: 70vh;
 	
 }
+.List{
+	color: black;
+}
+.List:hover{
+	color:white;
+}
 .Circle1,.Circle2,.Circle3,.Circle4{
 	position: absolute;
 	border:1px solid black;

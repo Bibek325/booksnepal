@@ -18,7 +18,7 @@ class SideMenu extends Component{
 			if(this.state.show){
 		attachedClass=[css.DropDown,css.Open]
 	}
-		let icon=(<i class="fa fa-caret-down"></i>)
+		let icon=(<i class="fa fa-bars"></i>)
 			if(this.state.show){
 				icon=(<i class="fa fa-caret-up"></i>)
 			}
@@ -26,7 +26,7 @@ class SideMenu extends Component{
 		<div className={css.Cat}>
 		<div className={css.Categories} onClick={this.DisplayDropDownHandler}>
 			
-			<div className={css.text}> Menu {icon}</div>
+			<div className={css.text}>Menu {icon}</div>
 		</div>
 		<div className={attachedClass.join(' ')} onClick={this.HideDropDownHandler}>
 			<Link to='/Menu/apiSearch'><div className={css.CategoriesItems}>Api Search</div></Link>

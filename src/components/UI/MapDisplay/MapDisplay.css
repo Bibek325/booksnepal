@@ -17,7 +17,8 @@
 }
 .map{
     height: 65vh;
-    width: 100vw;
+    width: 90vw;
+    padding-left: 5%;
 }
 .Error{
     text-align: center;

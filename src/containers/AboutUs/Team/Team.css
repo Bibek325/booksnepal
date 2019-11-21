@@ -3,9 +3,9 @@
 	margin-top: 10vh;
 }
 .Header{
-	font-size: 20px;
+	font-size: 30px;
 	text-align:center;
-	font-family: 'Sigmar One', cursive;
+	font-family: 'Kaushan Script', cursive;
 }
 .Body{
 	display: flex;

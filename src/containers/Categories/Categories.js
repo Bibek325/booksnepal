@@ -26,7 +26,7 @@ class Cateories extends Component{
 		<div className={css.Cat}>
 		<div className={css.Categories} onClick={this.DisplayDropDownHandler}>
 			
-			<div className={css.text}>{icon} Categories</div>
+			<div className={css.text} onClick={this.DisplayDropDownHandler}>{icon} Categories</div>
 		</div>
 		<div className={attachedClass.join(' ')} onClick={this.HideDropDownHandler}>
 			<Link to='/Categories/Guides'><div className={css.CategoriesItems}>Guide</div></Link>

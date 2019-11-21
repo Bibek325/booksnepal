@@ -9,6 +9,15 @@
 .Image:focus::placeholder{
 	color:transparent;
 }
+.fields{
+	margin-top: 1vh;
+	font-size: 10px;
+}
+.FormHeader{
+		font-family: 'Noto Sans', sans-serif;
+		text-decoration: underline;
+		font-size: 16px;
+}
 .Image{
 	font-size: 12px;
 	width: 20vw;
