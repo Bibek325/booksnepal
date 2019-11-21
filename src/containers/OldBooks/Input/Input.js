@@ -92,7 +92,7 @@ class Input extends Component{
 		})
 		}
 		else{
-			alert("Please Fill all the inputs then hit submit")
+			alert("Please fill all the inputs then hit submit.")
 		}
 
 		
@@ -102,14 +102,14 @@ class Input extends Component{
 		return(
 		<div className={css.Input}>
 			<form onSubmit={this.Submit}>
-			<div>Please fill the information below:</div>
-			<div>Title : <input type='Text' onChange={(event)=>this.inputHandler(event,'title')}/></div>
-			<div>Author : <input type='Text' onChange={(event)=>this.inputHandler(event,'author')}/></div>
-			<div>Description : <input type='Text' onChange={(event)=>this.inputHandler(event,'description')}/></div>
-			<div>Published Year : <input type='Text' onChange={(event)=>this.inputHandler(event,'publishedYear')}/></div>
-			<div>Category : <input type='Text' onChange={(event)=>this.inputHandler(event,'category')}/></div>
-			<div>Price : <input type='Text' onChange={(event)=>this.inputHandler(event,'price')}/></div>
-			<div>Image Link : <input className={css.Image} type='Text' placeholder="Copy paste the link of the image" onChange={(event)=>this.inputHandler(event,'image')}/></div>
+			<div className={css.FormHeader}>Please fill the information below to post your old books:</div>
+			<pre><div className={css.fields}>Title          : <input type='Text' onChange={(event)=>this.inputHandler(event,'title')}/></div>
+			<div className={css.fields}>Author         : <input type='Text' onChange={(event)=>this.inputHandler(event,'author')}/></div>
+			<div className={css.fields}>Description    : <input type='Text' onChange={(event)=>this.inputHandler(event,'description')}/></div>
+			<div className={css.fields}>Published Year : <input type='Text' onChange={(event)=>this.inputHandler(event,'publishedYear')}/></div>
+			<div className={css.fields}>Category       : <input type='Text' onChange={(event)=>this.inputHandler(event,'category')}/></div>
+			<div className={css.fields}>Price          : <input type='Text' onChange={(event)=>this.inputHandler(event,'price')}/></div>
+			<div className={css.fields}>     Image Link : <input className={css.Image} type='Text' placeholder="Copy paste the link of the image" onChange={(event)=>this.inputHandler(event,'image')}/></div></pre>
 			<div onclic><input type='submit'/></div>
 			</form>
 

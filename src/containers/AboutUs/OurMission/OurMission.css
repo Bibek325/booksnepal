@@ -7,14 +7,14 @@
 	margin-left: 10vw;
 }
 .Header{
-	font-size: 20px;
+	font-size: 30px;
 	text-align:center;
-	font-family: 'Sigmar One', cursive;
+	font-family: 'Kaushan Script', cursive;
 }
 @import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
 .Body{
 	
-	font-family: 'Jomolhari', serif;
+	font-family: 'Noto Sans', sans-serif;
 	
 	
 	

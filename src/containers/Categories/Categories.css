@@ -2,10 +2,14 @@
 .Categories{
 	font-size: 1.5vw;
 	display: flex;
-	
+	width: 17vw;
 	line-height: 10vh;
 	cursor: pointer;
+	padding-left: 5vw;
+	background-color: ;
+
 }
+
 .CategoriesItems:hover{
 	background-color: #5CDB95;
 	border-radius: 10px;

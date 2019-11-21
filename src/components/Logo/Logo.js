@@ -3,7 +3,7 @@ import css from './Logo.css'
 const Logo=(props)=>{
 	return(
 		<div className={css.Logo}>
-			<a className={css.logo} onClick={()=>props.scrollToTop('Home')}>BookStore<sup className={css.sup}> NP</sup></a>
+			<a className={css.logo} href="/">BookStore<sup className={css.sup}> NP</sup></a>
 		</div>
 		);
 }
