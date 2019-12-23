@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans&display=swap');
+.Categories{
+	font-size: 1.5vw;
+	display: flex;
+	
+	line-height: 10vh;
+	cursor: pointer;
+}
+.CategoriesItems:hover{
+	background-color: #5CDB95;
+	border-radius: 10px;
+	width: 98%;
+	margin-left: 1%;
+}
+.DropDown{
+	position: absolute;
+	line-height: 7vh;
+	width: 20%;
+	left:75%;
+	margin-top: -1vh;
+	z-index: 2000;
+	background-color:#05386B;
+
+	
+}
+.DropDown a{
+	color: white;
+}
+.Open{
+	display: block;
+}
+.Close{
+	display: none;
+}
+
+.text{
+	font-family: 'Noto Sans', sans-serif;
+	margin-left: 5vw;
+	margin-top :-2vh;
+	font-size: 1.4vw;
+}
+@media(max-width: 500px){
+	
+	.text{
+		font-size: 14px;
+	}
+	.DropDown{
+		margin-top: -2vh;
+		line-height: 5vh;
+		left: 0;
+
+		width: 50%;
+	}
+}

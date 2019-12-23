@@ -1,0 +1,48 @@
+.TrendingCard{
+	height: 40vh;
+	
+	border: 1px solid #ccc;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+	margin-right: 2.5vw;
+	
+	display: flex;
+	border-radius: 20px;
+}
+.ImageDiv{
+	
+	width: 15vw;
+}
+.Image{
+	padding: 2vh 1vw 1vh 1vw; 
+	box-sizing: border-box;
+	height:39vh;
+	border-radius: 20px;
+	width: 15vw; 
+}
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed&display=swap');
+.Details{
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 15px;
+	width: 15vw;
+	padding-top: 10vh;
+}
+@media(max-width: 500px){
+	.TrendingCard{
+		height: 26vh;
+		
+		width: 50vw;
+		
+
+	}
+	.Image{
+		
+		height:24vh;
+		width: 25vw;
+	}
+	.Details{
+		padding-top: 5vh;
+		padding-left: 12vw;
+		font-size: 12px;
+		width: 30vw;
+	}
+}

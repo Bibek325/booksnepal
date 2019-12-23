@@ -1,0 +1,40 @@
+.SideMenuBar{
+	display: none;
+
+}
+.SideMenuItem{
+	z-index: 900;
+	color:black;
+	display: flex;
+}
+@media(max-width: 500px){
+	.SideMenuBar{
+		z-index: 200;
+		width:50%;
+		background-color: white;
+		display: inline;
+		transition: transform 0.3s ease-out;
+		top:18vh;
+		height: 100%;
+		position: fixed;
+		box-sizing: border-box;
+	}
+	.SideMenuItem{
+	margin-top: 5vh;
+	z-index: 900;
+	
+	display: inline-block;
+}
+.SideMenuItem a{
+	
+	color:black;
+	
+}
+	.Open{
+		transform: translateX(100%);
+	}
+	.Close{
+		transform: translateX(200%);
+	}
+	
+}

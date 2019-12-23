@@ -1,0 +1,59 @@
+.Top{
+    width: 100%;
+	margin-top: 0px;
+	font-size: 1.3vw;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Noto Sans', sans-serif;
+
+
+	}
+.Connect{
+	margin-right: 12vw;
+}
+.Call{
+	
+	width: 70%;
+	opacity: .7;
+	font-size: 1.2vw;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+i{
+	cursor: pointer;
+
+}
+.SocialSiteFb{
+	color:#3b5998;
+}
+.SocialSiteInsta{
+	color:#e95950;
+}
+.Third{
+	width: 30%;
+}
+.Login{
+	
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
+	margin-right: 12vw;
+
+}
+#call{
+	margin-top:9px;
+	height: 20px;
+	width: 20px;
+}
+@media(max-width: 500px){
+	.Call{
+		display: none;
+	}
+	.Login{
+		width: 50%;
+		font-size: 12px;
+		margin-top: 1vh;
+	}
+}

@@ -1,0 +1,23 @@
+.Advertisement{
+	width: 105%;
+	display: flex;
+	margin-left: -2vw;
+	height: 60vh;
+	justify-content: space-between;
+	background-color: green;
+	box-shadow: 12px 12px 12px rgba(0,0,0,.6);
+	margin-top: 3vh;
+}
+.AdImg{
+	width: 50%;
+	height: 60vh;
+}
+@media(max-width: 500px){
+	.Advertisement{
+		height: 30vh;
+		margin-bottom: 5vh;
+	}
+	.AdImg{
+		height: 30vh;
+	}
+}

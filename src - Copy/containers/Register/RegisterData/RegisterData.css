@@ -1,0 +1,12 @@
+.ContactData{
+	background-color: #F5F5F6;
+	text-align: center;
+	box-shadow: 0px 2px 3px #ccc;
+	border: 1px solid #eee;
+	
+	box-sizing: border-box;
+
+}
+.Input{
+	display: block;
+}

@@ -42,6 +42,9 @@ class WelcomeContent extends Component{
       smooth: 'easeInOutQuart'
     })
   }
+  	buttonClicked(){
+  		alert("BEST OF LUCK HAI GUYS !!!!")
+  	}
 	render(){
 		
 
@@ -120,9 +123,9 @@ class WelcomeContent extends Component{
 			</div>
 			<div>
 						
-							<a onClick={this.scrollTo}><div className={css.button} on>
-								Let's Explore
-							</div>	</a>
+							<Link to='/ebooks/CSITSixth'><div className={css.button} onClick={this.buttonClicked}>
+								Looking for CSIT 6th Notes??
+							</div>	</Link>
 						</div>
 
 			
