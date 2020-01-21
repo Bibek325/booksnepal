@@ -6,6 +6,7 @@ const Left=()=>{
 		<div className={css.Left}>
 			<div className={css.Header}>Compiler Old Questions</div>
 			
+			<Link className={css.Link} to='/ebooks/CSITSixth/compiler-OldQuestion/20'><div className={css.Body}>All question Collection</div></Link>
 			<Link className={css.Link} to='/ebooks/CSITSixth/compiler-OldQuestion/2068'><div className={css.Body}>Old Questions 2068</div></Link>
 			<Link className={css.Link} to='/ebooks/CSITSixth/compiler-OldQuestion/2069'><div className={css.Body}>Old Questions 2069</div></Link>
 			<Link className={css.Link} to='/ebooks/CSITSixth/compiler-OldQuestion/2070'><div className={css.Body}>Old Questions 2070</div></Link>

@@ -7,7 +7,7 @@ import image from '../../assets/hero.png'
 import eye from '../../assets/eye.gif'
 
 import FeedBack from './FeedBack/FeedBack'
-import feedback from '../../assets/feedback.png'
+import chat from '../../assets/chat.png'
 import * as Scroll from 'react-scroll'
 import {  Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 class WelcomeContent extends Component{
@@ -90,7 +90,7 @@ class WelcomeContent extends Component{
 	            }
 	    }
 	}} />
-				<div onClick={this.modalHandler} className={css.Feedback}><img className={css.FeedBackLogo} src={feedback}/></div>
+				<div onClick={this.modalHandler} className={css.Chat}><img className={css.chatLogo} src={chat}/></div>
 				<div  className={css.content}>
 
 				 <div className={css.Circle1}></div> 
@@ -103,9 +103,12 @@ class WelcomeContent extends Component{
           <div className={css.Div4}></div>
           <div className={css.Eye1}><img className={css.EyeImg} src={eye}/></div>
           <div className={css.Eye2}><img className={css.EyeImg} src={eye}/></div>
-
-					<p className={css.head}>Welcome to booksnepal.com</p>
-						<p className={css.body}>where you get all kinds of reading materials available on a single website.The platform on which you can then do various activity like buy,sell,share,donate,publish,explore and many more. Do support us for creating an empire of the bookstore</p>
+          				<div className={css.TextAnimations}>
+          					<span className={css.TextAnimations1}>
+          						<p className={css.head}>Welcome to booksnepal.com</p>
+          					</span>
+          					<span className={css.TextAnimations2}>
+          												<p className={css.body}>where you get all kinds of reading materials available on a single website.The platform on which you can then do various activity like buy,sell,share,donate,publish,explore and many more. Do support us for creating an empire of the bookstore</p>
 						<div className={css.contentList}>
 						<div className={css.list}>
 							<Link className={css.List} to='/e-books'><div> e-books</div></Link>
@@ -113,9 +116,10 @@ class WelcomeContent extends Component{
 							<Link className={css.List} to='/old-books'><div> used books</div></Link>
 						</div>
 						</div>
-						
-
-				</div>
+          					</span>
+          				</div>
+					
+						</div>
 				<div></div>
 				
 				<div className={css.KtaImage}><img className={css.KtaImg} src={image}/></div>
@@ -123,7 +127,7 @@ class WelcomeContent extends Component{
 			</div>
 			<div>
 						
-							<Link to='/ebooks/CSITSixth'><div className={css.button} onClick={this.buttonClicked}>
+							<Link to='/survey'><div className={css.button} >
 								Looking for CSIT 6th Notes??
 							</div>	</Link>
 						</div>

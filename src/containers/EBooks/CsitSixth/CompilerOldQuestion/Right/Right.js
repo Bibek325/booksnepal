@@ -7,6 +7,12 @@ const Right=(props)=>{
 	let available=true
 	let display='bibek'
 	switch(year){
+		case '20':{
+			display='this is 2065 ho hai'
+			pdf="https://firebasestorage.googleapis.com/v0/b/bookstore-12c74.appspot.com/o/EBOOKS%2FCSIT%2FSIXTH%2FCompiler2068-2072ex20706537147585148188517.pdf?alt=media&token=53d4a7ec-a24e-4a78-8913-77a5c77d4c15"
+			available=true
+			break;
+		}
 		case '2065':{
 			display='this is 2065 ho hai'
 			pdf=""

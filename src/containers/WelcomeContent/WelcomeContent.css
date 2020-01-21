@@ -1,5 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
 
+.TextAnimations{
+	
+	
+	
+	
+
+
+}
+.TextAnimations span{
+	display: block;
+}
+.TextAnimations1{
+	
+	font-weight:700;
+	color: black;
+	letter-spacing: 1px; 
+	
+	animation:text 3s 1;
+	background: #5CDB95;
+
+}
+.TextAnimations2{
+	
+
+}
+@keyframes text{
+	0%{
+
+		color: #5CDB95;
+		margin-bottom: -40px;
+	}
+	25%{
+		
+		letter-spacing: 2px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing: 1px;
+		margin-bottom: -40px;
+	}
+
+}
 .Particles{
 	position: absolute;
 	width:80%;
@@ -62,10 +104,10 @@
 
 }
 .Div2{
-	margin-top:9.4%; ;
+	margin-top:12.3%; ;
 }
 .Div3{
-	margin-top:26%; ;
+	margin-top:22%; ;
 }.Div4{
 	margin-top:32.4% ;
 }
@@ -73,11 +115,11 @@
 	margin-top:2.8%; 
 }
 .Circle2{
-	margin-top:9.2%;
+	margin-top:12%;
 	
 }
 .Circle3{
-	margin-top:25.8%;
+	margin-top:21.8%;
 }
 .Circle4{
 	margin-top:32.2%;
@@ -100,12 +142,12 @@ font-family: 'Turret Road', cursive;
 .Welcome{
 	
 }
-.Feedback{
-	background-color: #05386B;
-	border-radius: 0px 20px 20px 0px;
+.Chat{
+	
 	position: absolute;
-	top:50vh;
-	left:5%;
+	top:90vh;
+	left:7%;
+	cursor: pointer;
 
 
 }
@@ -113,13 +155,14 @@ font-family: 'Turret Road', cursive;
 .head{
 	margin-top: 14vh;
 	font-family: 'Fondamento', cursive;
-	font-size: 40px;
+	font-size: 45px;
 }
 .body{
 	text-align: left;
 	margin-top: -2vh;
 	opacity: .8;
-font-family: 'Turret Road', cursive;
+	font-family: 'Turret Road', cursive;
+	
 
 
 
@@ -135,7 +178,7 @@ font-family: 'Turret Road', cursive;
 	height: 75vh;
 	width: 30vw;
 }
-.FeedBackLogo{
+.chatlogo{
 	margin-left: 0vw;
 	height: 18vh;
 	width:1.5vw;
@@ -169,20 +212,21 @@ button::focus{
 	box-shadow: 3px 5px 2px rgba(0,0,0,0.3);
 	margin-top:10px;
 	border-radius: 30px;
-	background:red; 
+	
 	border:none;
-	border: .4px solid #05386B;
+	border: .5px solid #05386B;
 	margin-left: 10vw;
 	height: 8vh;
 	z-index:;
 	opacity: .8;
+	transition: 1s;
 	width: 25vw;
 	color: white;
 	font-size: 20px;
 	font-family: 'Noto Sans', sans-serif;
 }
 .button:hover{
-	background:transparent;
+	background:blue;
 }
 @media(max-width: 500px){
 	.head{

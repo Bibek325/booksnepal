@@ -1,0 +1,42 @@
+.SurveyDiv{
+	border:1px solid red;
+	height: 50vh;
+	width: 50vw;
+	padding-top:40px;
+	padding-left:30px;
+	box-sizing: border-box;
+	font-size: 3rem;
+	font-family: 'Kaushan Script', cursive;
+	margin-top: 10px;
+
+}
+.Survey{
+	display: flex;
+	justify-content: center;
+}
+.Link{
+	color:white;
+}
+.button1,.button2{
+	position: absolute;
+	font-size: 3rem;
+	font-family: 'Kaushan Script', cursive;
+	background-color: red;
+	width: 10vw;
+	height: 10vh;
+	box-sizing: border-box;
+	padding-left: 1vw;
+	cursor:pointer;
+}
+.button1{
+	top:50vh;
+	left:35vw;
+}
+.button2{
+	top:50vh;
+	left:50vw;
+}
+.button1:hover,.button2:hover{
+	background: blue;
+	color:white;
+}

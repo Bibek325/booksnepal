@@ -7,6 +7,7 @@ const Left=()=>{
 			<div className={css.Header}>Web Technlogy Notes</div>
 			<Link className={css.Link} to='/ebooks/CSITSixth/WebTechnology-Notes/2065'><div className={css.Body}>Handwritten Note of Sanjay Rai</div></Link>
 			<Link className={css.Link} to='/ebooks/CSITSixth/WebTechnology-Notes/2066'><div className={css.Body}>Handwritten Note of Rijen Manandhar</div></Link>
+			<Link className={css.Link} to='/ebooks/CSITSixth/WebTechnology-Notes/2067'><div className={css.Body}>Old Question Solutions</div></Link>
 			
 			
 		</div>

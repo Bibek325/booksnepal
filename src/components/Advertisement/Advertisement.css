@@ -5,6 +5,7 @@
 	height: 60vh;
 	justify-content: space-between;
 	background-color: green;
+	border:1px solid black;
 	box-shadow: 12px 12px 12px rgba(0,0,0,.6);
 	margin-top: 3vh;
 }

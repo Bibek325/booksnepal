@@ -9,7 +9,7 @@ const TopBar=()=>{
 				<div className={css.TopBar}>
 						<div className={css.Date}></div>
 						<div>
-						<i className="fa fa-cogs"></i> Options
+						
 						</div>
 
 				</div>

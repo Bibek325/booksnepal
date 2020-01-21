@@ -8,6 +8,14 @@
 	display: flex;
 	border-radius: 20px;
 }
+.SeeMore{
+	color: blue;
+	cursor: pointer;
+}
+.SeeMore:hover{
+	color: green;
+	text-decoration-line: underline;
+}
 .ImageDiv{
 	
 	width: 15vw;
