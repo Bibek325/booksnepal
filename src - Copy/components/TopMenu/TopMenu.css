@@ -1,0 +1,22 @@
+.TopMenu{
+		width: 75%;
+	box-sizing: border-box;
+
+	height: 15vh;
+}
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans&display=swap');
+
+.Top{
+	color: #404040;
+	font-family: 'Noto Sans', sans-serif;
+	height:3vh;
+	display: flex;
+	justify-content: space-between;
+	
+	
+}
+.Bottom{
+	margin-top: 10px;
+	height: 9vh;
+	
+}

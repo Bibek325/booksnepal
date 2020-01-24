@@ -1,0 +1,86 @@
+.Footer{
+	
+	font-family: 'Saira Condensed', sans-serif;
+	margin-top:5vh;
+	background-color: #D4D1D0;
+	box-sizing: border-box;
+
+}
+.Middle{
+	margin-bottom: 4vh;
+}
+.Mitems:hover{
+	text-decoration: underline;
+}
+.Footer a{
+	color: white;	
+}
+.Copyright{
+	color:#5CDB95;
+	text-align:center;
+	font-size: 12px;
+	background-color: #05386B;
+}
+.LocationImage{
+	background-image: url('../../assets/loc.jpg');
+	position: center center;
+	height: 40vh;
+	width: 100%;
+	
+}
+.Top{
+	cursor: pointer;
+	color:white;
+	height: 4vh;
+	padding-top:1vh;
+	padding-bottom:1px;
+	background-color:#05386B ;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Turret Road', cursive;
+	
+}
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans&display=swap');
+
+.Bottom{
+	height:50vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+.Div1,.Div2,.Div3{
+	text-align: center;
+	margin-top: 2vh;
+	width: 20%;
+	cursor: pointer;
+	
+}
+.Div1{
+	width: 24%;
+	
+}
+.Div1,.Div2{
+	opacity: ;
+	
+	text-align: left;
+}
+@media(max-width: 500px){
+	.Div1,.Div2,.Div3{
+		width: 100%;
+		text-align: center;
+	}
+	.Div1{
+		margin-top:2vh;
+	}
+	.Div3{
+		margin-top: 2vh;
+	}
+	.Footer{
+		font-size: 12px;
+	}
+	.Copyright{
+		font-size: 10px;
+		margin-top: 27vh;
+	}
+}

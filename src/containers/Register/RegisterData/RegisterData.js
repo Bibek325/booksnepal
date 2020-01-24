@@ -4,6 +4,8 @@ import css from './RegisterData.css'
 import axios from 'axios'
 import Input from '../../../components/UI/Input/Input'
 import Button from '../../../components/UI/Button/Button'
+import * as action from '../../../store/action/auth'
+import { connect } from 'react-redux'
 class RegisterData extends Component{
 	state={
 		registerForm:{
@@ -24,12 +26,28 @@ class RegisterData extends Component{
 			email:{
 				elementType:'input',
 				elementConfig:{
-					type:'text',
-					placeholder:'Email'
+					type:'email',
+					placeholder:'Email',
+					
 				},
 				value:'',
 				validation:{
-					required:true
+					required:true,
+					isEmail:true
+				},
+				valid:false,
+				touched:false
+			},
+			password:{
+				elementType:'input',
+				elementConfig:{
+					type:'password',
+					placeholder:'Password'
+				},
+				value:'',
+				validation:{
+					required:true,
+					minLength:6
 				},
 				valid:false,
 				touched:false
@@ -60,23 +78,7 @@ class RegisterData extends Component{
 				valid:false,
 				touched:false
 			},
-			HouseNo:{
-				elementType:'input',
-				elementConfig:{
-					type:'text',
-					placeholder:'Home Number'
-				},
-				value:'',
-				validation:{
-					required:true,
-					minLength:1,
-					maxLength:10
-				},
-				valid:false,
-				touched:false
-			},
 			
-		
 			gender:{
 				elementType:'select',
 				elementConfig:{
@@ -93,19 +95,36 @@ class RegisterData extends Component{
 		loading:false,
 		formIsValid:false
 	}
-	checkValidity=(value,rules)=>{
-		let isValid=true
-		if(rules.required){
-			isValid=value.trim()!=='' && isValid;
-		}
-		if(rules.minLength){
-			isValid=value.length >=rules.minLength && isValid;
-		}
-		if(rules.maxLength){
-			isValid=value.length <=rules.maxLength && isValid;
-		}
-		return isValid;
-	}
+	checkValidity(value, rules) {
+        let isValid = true;
+        if (!rules) {
+            return true;
+        }
+        
+        if (rules.required) {
+            isValid = value.trim() !== '' && isValid;
+        }
+
+        if (rules.minLength) {
+            isValid = value.length >= rules.minLength && isValid
+        }
+
+        if (rules.maxLength) {
+            isValid = value.length <= rules.maxLength && isValid
+        }
+
+        if (rules.isEmail) {
+            const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+            isValid = pattern.test(value) && isValid
+        }
+
+        if (rules.isNumeric) {
+            const pattern = /^\d+$/;
+            isValid = pattern.test(value) && isValid
+        }
+
+        return isValid;
+    }
 	orderHandler=(event)=>{
 		event.preventDefault();
 
@@ -135,6 +154,7 @@ class RegisterData extends Component{
 				loading:false
 			});
 		})
+		this.submitHandler();
 
 	}
 	inputChangeHandler=(event,inputIdentifier)=>{
@@ -155,7 +175,10 @@ class RegisterData extends Component{
 			});
 	
 	}
-
+	submitHandler =()=>{
+		
+		this.props.onAuth(this.state.registerForm.email.value,this.state.registerForm.password.value);
+	}
 
 	render(){
 		const formElementsArray=[];
@@ -192,4 +215,9 @@ class RegisterData extends Component{
 			);
 	}
 }
-export default RegisterData
+const mapDispatchToProps = (dispatch) =>{
+	return {
+		onAuth:(email,password) => dispatch(action.auth(email,password))
+	}
+}
+export default connect(null,mapDispatchToProps)(RegisterData)

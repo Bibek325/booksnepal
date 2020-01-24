@@ -1,0 +1,21 @@
+.TopBar{
+	display: 	flex;	
+	justify-content: 	space-between;	
+	color:grey;
+	height: 3vh;
+	font-size:12px;
+	background-color: ;
+	cursor: not-allowed;
+	text-align: right;
+	padding-right: 30px;
+}
+.Date{
+	font-size: 15px;
+	opacity: 	.4;
+	padding-left: 10px;
+}
+@media (max-width:500px){
+	.TopBar{
+		display: none;
+	}
+}

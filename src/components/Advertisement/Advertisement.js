@@ -1,10 +1,12 @@
 import React from 'react'
 import css from './Advertisement.css'
+import ad from '../../assets/ad.jpg'
+import ad0 from '../../assets/ad1.jpg'
 const Advertisement = ()=>{
 	return(
 		<div className={css.Advertisement}>
-		<img className={css.AdImg} src='https://media.giphy.com/media/HAWDYCNxr2HeM/giphy.gif'/>
-		<img className={css.AdImg} src='https://media.giphy.com/media/zT5AnDBzsEtfa/giphy.gif'/>
+		<a href='http://nccs.edu.np/college/' target="_blank"><img className={css.ad1}  src={ad}/></a>
+		<img className={css.ad0} src={ad0}/>
 		</div>
 		)
 }

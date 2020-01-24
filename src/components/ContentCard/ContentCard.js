@@ -21,13 +21,15 @@ class ContentCard extends Component{
 						<ContentDescription clicked={this.backDropHandler} bookinfo={this.props.bookinfo}/>
 
 			</Modal>
-			<div className={css.ContentCard} onClick={this.modalHandler}>
+			<div className={css.ContentCard} >
 				<div className={css.Image}>
 				<img className={css.img} src={this.props.bookinfo.image}/>
 				</div>
 				<div className={css.Label}>
-					<div>{this.props.bookinfo.title}</div>
+					<div className={css.title}>{this.props.bookinfo.title}</div>
+					<div className={css.SoldBy}>Sold By : Bibek Lama</div>
 					<div>Rs: {this.props.bookinfo.price}/-</div>
+					<div onClick={this.modalHandler} className={css.SeeMore}>See More >></div>
 				</div>
 			</div>
 </Aux>

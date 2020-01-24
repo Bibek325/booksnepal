@@ -1,0 +1,44 @@
+
+.TeamMember{
+	background-color: #F5F5F6;
+	display: block;
+	border:1px solid #ccc;
+	height: 50vh;
+	width: 30%;
+	margin-top: 5vh;
+	box-shadow: 0px 5px 7px rgba(0,0,0,0.6);
+	box-sizing: border-box;
+}
+.ImageDiv{
+	overflow: hidden;
+	margin-left:7vw;
+	
+	
+}
+.Image{
+	box-shadow: 2px 8px 8px rgba(0,0,0,0.4);
+	margin-top: 3vh;
+	width: 70%;
+	height: 70%;
+	overflow: hidden;
+}
+.Name{
+	padding-top:1vh;
+	font-weight: normal;
+	font-size: 20px;
+	font-family: 'Kaushan Script', cursive;
+
+	text-align: center;
+}
+.Position{
+	font-size: 14px;
+		text-align: center;;
+	font-family: 'Noto Sans', sans-serif;
+	
+}
+@media(max-width: 500px){
+	.TeamMember{
+		height: 25vh;
+		font-size: 12px;
+	}
+}

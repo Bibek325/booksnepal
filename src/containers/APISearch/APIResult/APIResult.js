@@ -8,6 +8,7 @@ class APIResult extends Component{
 		title:'',
 		author:'',
 		thumbnail:'',
+		published:'',
 		search:'sun',
 		loading:true
 	}
@@ -33,6 +34,7 @@ class APIResult extends Component{
 			console.log(res)
 			this.setState({loading:false,title:res.data.items[0].volumeInfo.title,
 					author:res.data.items[0].volumeInfo.authors,
+					Published:res.data.items[0].volumeInfo.publishedDate,
 							thumbnail:res.data.items[0].volumeInfo.imageLinks.thumbnail		
 			
 			})
@@ -40,16 +42,17 @@ class APIResult extends Component{
 	}
 	render(){
 		
-				let APIResult=<Spinner/>
-				if(!this.state.loading)
-					{ APIResult=(
+				
+				const APIResult=(
 				<div className={css.Display}>
-				<div><img src={this.state.thumbnail}/></div>
-				<div>Author : {this.state.author}</div>
+				<div classname={css.APIimage}><img classname={css.APIimg} src={this.state.thumbnail}/></div>
+				
 				<div>Title : {this.state.title}</div>
+				<div>Author : {this.state.author}</div>
+				<div>Published Date : {this.state.Published}</div>
 				
 				</div>)
-				}	
+			
 		return(
 			<div>
 				{APIResult}

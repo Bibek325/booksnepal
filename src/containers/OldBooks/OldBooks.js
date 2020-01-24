@@ -4,6 +4,7 @@ import Input from './Input/Input'
 import ErrorHandler from '../../hoc/ErrorHandler/ErrorHandler'
 import Spinner from '../../components/UI/Spinner/Spinner'
 import Contents from '../Contents/Contents'
+import { connect } from 'react-redux'
 import css from './OldBooks.css'
 class OldBooks extends Component{
 	state={
@@ -21,18 +22,29 @@ class OldBooks extends Component{
 			this.setState({books:fetchBooks,loading:true})
 		})
 	}
+
 	
 	render(){
 		let content=<Spinner/>
 		if(this.state.loading){
 			content=<Contents books={this.state.books} category='Old-Books'/>
 		}
+		let show=null
+		if(this.props.isAuth){
+			show=<Input/>
+		}
 		return(
 			<div className={css.OldBooks}>
-				<Input/>
+				{show}
 				{content}
+				}
 			</div>
 			);
 	}
 }
-export default ErrorHandler(OldBooks,axios)
+const mapStateToProps=(state)=>{
+	return{
+		isAuth:state.isAuth
+	}
+}
+export default connect(mapStateToProps)(ErrorHandler(OldBooks,axios))
