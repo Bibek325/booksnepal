@@ -13,6 +13,13 @@
 	width: 50%;
 	height: 60vh;
 }
+.ad0{
+	width: 50vw;
+}
+.ad1{
+	height: 60vh;
+	width: 100%;
+}
 @media(max-width: 500px){
 	.Advertisement{
 		height: 30vh;

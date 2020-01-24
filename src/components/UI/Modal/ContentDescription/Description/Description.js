@@ -13,7 +13,7 @@ class Description extends Component{
 	render(){
 		return(
 		<div className={css.Description}>
-		<Modal show={this.state.show} Error >Purchase Successful</Modal>
+		<Modal show={this.state.show} Error >Added To Cart</Modal>
 			<div className={css.div1}><strong>Details</strong></div>
 			<div className={css.div2}><strong>Title :</strong> {this.props.bookinfo.title}</div>
 			<div className={css.div3}><strong>Author :</strong> {this.props.bookinfo.author}</div>

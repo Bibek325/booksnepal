@@ -2,10 +2,11 @@
 .Logo{
 font-family: 'Kaushan Script', cursive;
 text-align: center;
-margin-top: 0px;
+margin-top: -20px;
 font-size: 4vw;
 width: 25%;
-	
+margin-left: 2px;
+	overflow: hidden;
 	box-sizing: border-box; 
 }
 .logo{
@@ -13,6 +14,11 @@ width: 25%;
 }
 .sup{
 	font-size: 2vw;
+}
+.capture{
+	height: 17vh;
+	width: 100%;
+	margin-top:-9px;
 }
 @media(max-width: 500px){
 	.Logo{

@@ -128,7 +128,11 @@ class WelcomeContent extends Component{
 			<div>
 						
 							<Link to='/survey'><div className={css.button} >
+<<<<<<< HEAD
 								Looking for CSIT 6th Notes??
+=======
+								Let's Get Started
+>>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b
 							</div>	</Link>
 						</div>
 

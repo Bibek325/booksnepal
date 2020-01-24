@@ -18,7 +18,7 @@ const MapDisplay=(props)=>{
 				opacity:props.show?'1':'0'
 			}}>
 			
-			<img className={css.map} src={map} alt='map'/>
+			<Map/>
 		</div>
 		</Aux>
 		);

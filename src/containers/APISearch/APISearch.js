@@ -10,7 +10,7 @@ class APISearch extends Component{
 		searchTerm:''
 	}
 	changeSearchTerm=(e)=>{
-		if(e.key==='Enter'){
+		if(e.key=='Enter'){
 			this.props.history.replace('/API/' +this.state.searchTerm)
 		}
 		else{
