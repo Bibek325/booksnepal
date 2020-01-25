@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import css from './Top.css'
+import {Link} from 'react-router-dom'
 import Login from '../../../containers/Register/Login/Login'
 import Register from '../../../containers/Register/Register'
 import Aux from '../../../hoc/Auxo/Auxo'
@@ -8,7 +9,7 @@ class Top extends Component{
 	render(){
 		let log = <Aux>
 			<div><Register/></div>
-				<div><Login/></div>
+				<Link to='/login'><div><i className="fa fa-sign-in" aria-hidden="true"></i>Login</div></Link>
 		</Aux>
 		if(this.props.isAuth){
 			log=<div classname={css.logout}><a href="/">

@@ -1,19 +1,42 @@
 import React,{Component} from 'react'
 import Modal from '../../Modal'
+import { connect } from 'react-redux'
 import css from './Description.css'
+import {Link} from 'react-router-dom'
+import axios from 'axios'
+import Spinner from '../../../Spinner/Spinner'
+import {withRouter} from 'react-router-dom'
 class Description extends Component{
 	state={
-		show:false
+		show:false,
+	
+		books:{}
 	}
-	modalHandler=()=>{
-		this.setState({
-			show:true
+	orderHandler=()=>{
+		
+		axios.post('https://bookstore-12c74.firebaseio.com/cart.json',this.props.bookinfo)
+		.then(res=>{
+			alert("Successfully added to cart")
 		})
-	}
+		.catch(error=>{
+			
+		})
+
+
+
+
+
+		
+		
+
+			}
+
 	render(){
+		
+		console.log(this.state.books)
 		return(
 		<div className={css.Description}>
-		<Modal show={this.state.show} Error >Added To Cart</Modal>
+				
 			<div className={css.div1}><strong>Details</strong></div>
 			<div className={css.div2}><strong>Title :</strong> {this.props.bookinfo.title}</div>
 			<div className={css.div3}><strong>Author :</strong> {this.props.bookinfo.author}</div>
@@ -22,10 +45,15 @@ class Description extends Component{
 			<div className={css.div6}><strong>Price :</strong> Rs {this.props.bookinfo.price}/-</div>
 			<div className={css.div7}>
 					<div className={css.Cancel} onClick={this.props.clicked}>Cancel</div>
-					<div className={css.Order} onClick={this.modalHandler}>Order</div>
+					<div className={css.Order} onClick={this.orderHandler}>Order</div>
 			</div>
 		</div>
 		);
 		}
 }
-export default Description
+const mapStateToProps=(state)=>{
+	return{
+		isAuth:state.isAuth
+	}
+}
+export default connect(mapStateToProps)(withRouter(Description))

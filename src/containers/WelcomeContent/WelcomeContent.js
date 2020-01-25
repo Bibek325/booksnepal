@@ -111,7 +111,7 @@ class WelcomeContent extends Component{
           												<p className={css.body}>where you get all kinds of reading materials available on a single website.The platform on which you can then do various activity like buy,sell,share,donate,publish,explore and many more. Do support us for creating an empire of the bookstore</p>
 						<div className={css.contentList}>
 						<div className={css.list}>
-							<Link className={css.List} to='/e-books'><div> e-books</div></Link>
+							<Link className={css.List} to='/ebooks'><div> e-books</div></Link>
 							<Link className={css.List} to='/new-books'><div> books</div></Link>
 							<Link className={css.List} to='/old-books'><div> used books</div></Link>
 						</div>

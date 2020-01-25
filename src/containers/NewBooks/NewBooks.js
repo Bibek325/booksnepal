@@ -16,6 +16,7 @@ class NewBooks extends Component{
 	componentWillMount(){
 		axios.get('https://bookstore-12c74.firebaseio.com/NewBooks.json')
 		.then(res=>{
+			console.log(res)
 			const fetchBooks=[];
 			for(let key in res.data){
 				fetchBooks.push({...res.data[key]})
