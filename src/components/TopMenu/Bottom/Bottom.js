@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import cart from '../../../assets/cart.png'
 import css from './Bottom.css'
+import {Link} from 'react-router-dom'
 import {withRouter} from 'react-router-dom'
 class Bottom extends Component{
 	state={
@@ -25,7 +26,7 @@ class Bottom extends Component{
 			<div className={css.First}>
 			<input className={css.SearchBar} type='text' placeholder='What are you looking for ?' onKeyUp={(e)=>this.changeSearchTerm(e)}/>
 			<div className={css.button} onClick={this.changeSearchTermButton}>Search</div></div>
-			<div className={css.Second}><img className={css.img} src={cart}/></div>
+			<Link to='/cart'><div className={css.Second}><img className={css.img} src={cart}/></div></Link>
 		</div>
 
 		);

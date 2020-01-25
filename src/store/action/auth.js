@@ -14,17 +14,10 @@ export const authSuccess =(authData)=>{
 	}
 }
 
-<<<<<<< HEAD
-export const authFail =(error)=>{
-	return {
-		type:actionTypes.AUTH_FAIL,
-		error:error
-=======
 export const authFail =()=>{
 	return {
 		type:actionTypes.AUTH_FAIL,
 		error:true
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b
 	}
 }
 export const auth =(email,password)=>{
@@ -45,8 +38,6 @@ export const auth =(email,password)=>{
 			dispatch(authFail(err))
 		})
 	}
-<<<<<<< HEAD
-=======
 }
 export const authLogin =(email,password)=>{
 	return dispatch=>{
@@ -66,5 +57,4 @@ export const authLogin =(email,password)=>{
 			dispatch(authFail())
 		})
 	}
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b
 }

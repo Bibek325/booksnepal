@@ -24,13 +24,10 @@ import CsitEighth from './containers/EBooks/CsitEighth/CsitEighth'
 import CsitSeventh from './containers/EBooks/CsitSeventh/CsitSeventh'
 import css from './App.css';
 
-<<<<<<< HEAD
-=======
 import Literature from './containers/Categories/CategoryItems/Literature/Literature'
 import Guides from './containers/Categories/CategoryItems/Guides/Guides'
 import Philosophy from './containers/Categories/CategoryItems/Philosophy/Philosophy'
 
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b
 import CategoryItems from './containers/Categories/CategoryItems/CategoryItems'
 import APIResult from './containers/APISearch/APIResult/APIResult'
 import Advertisement from './components/Advertisement/Advertisement'
@@ -46,6 +43,9 @@ import {Route,Switch} from 'react-router-dom'
 import Search from './containers/Search/Search'
 import SideMan from './assets/SideMan.jpg'
 import * as Scroll from 'react-scroll';
+import Login from './containers/Register/Login/Login'
+import Cart from './containers/Cart/Cart'
+
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 class App extends Component{
   componentDidMount(){
@@ -95,13 +95,11 @@ class App extends Component{
          
             
             <Route path='/Menu/feedback' exact component={FeedBackDisplay}/>
-<<<<<<< HEAD
-            <Route path='/Categories/:categories' exact component={CategoryItems}/>
-=======
+            <Route path='/Cart' exact component={Cart}/>
+            <Route path='/login' exact component={Login}/>
             <Route path='/Categories/Literature' exact component={Literature}/>
             <Route path='/Categories/Guides' exact component={Guides}/>
             <Route path='/Categories/Philosophy' exact component={Philosophy}/>
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b
             <Route path='/ebooks/CSITSixth/compiler-OldQuestion' component={CompilerOldQuestion}/>
             <Route path='/ebooks/CSITSixth/RTS-OldQuestion' component={RTSOldQuestion}/>
             <Route path='/ebooks/CSITSixth/WebTechnology-OldQuestion' component={WebTechnologyOldQuestion}/>

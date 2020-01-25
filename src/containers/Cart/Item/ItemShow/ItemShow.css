@@ -1,0 +1,14 @@
+.ShowItem{
+	width: 89.1vw;
+	
+	height: 10vh;
+	display: flex;
+}
+.img,.aut,.tit,.des,.pri{
+	
+	width: 20vw;
+	text-align: center;
+}
+.des{
+	overflow:hidden;
+}

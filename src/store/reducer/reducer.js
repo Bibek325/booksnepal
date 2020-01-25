@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import * as actionTypes from '../action/actionTypes'
-
-const initialState={
-	value:2
-}
-const reducer=(state=initialState,action)=>{
-	return state;
-}
-export default reducer
-=======
 import * as actionTypes from '../action/actionTypes';
 import { updateObject } from '../utility';
 
@@ -54,4 +43,3 @@ const reducer = ( state = initialState, action ) => {
 };
 
 export default reducer;
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b

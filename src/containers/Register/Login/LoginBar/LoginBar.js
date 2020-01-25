@@ -1,10 +1,7 @@
 import React,{Component} from 'react'
 import css from './LoginBar.css'
-<<<<<<< HEAD
-=======
 import Spinner from '../../../../components/UI/Spinner/Spinner'
 
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b
 import Input from '../../../../components/UI/Input/Input'
 import Button from '../../../../components/UI/Button/Button'
 import BackDrop from '../../../../components/UI/BackDrop/BackDrop'
@@ -105,11 +102,7 @@ class LoginBar extends Component{
 				config:this.state.controls[key]
 			});
 		}
-<<<<<<< HEAD
-		const form = formElementsArray.map(formElement =>(
-=======
 		let form = formElementsArray.map(formElement =>(
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b
 			<Input 
 				key={formElement.id}
 				shouldValidate={formElement.config.validation}
@@ -122,8 +115,6 @@ class LoginBar extends Component{
 				changed={(event)=>this.inputChangeHandler(event,formElement.id)}
 			/>
 			))
-<<<<<<< HEAD
-=======
 		if(this.props.loading){
 			form=<Spinner/>
 		}
@@ -131,19 +122,14 @@ class LoginBar extends Component{
 		if(this.props.error){
 			errorMessage=<p>EMAIL AND PASSWORD DID NOT MATCH </p>
 		}
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b
 	return(
 		<Aux>
 		
 		<div className={attachedClass.join(' ')}>
 			<form onSubmit={this.submitHandler}>
-<<<<<<< HEAD
-				{form}
-=======
 			{errorMessage}
 				{form}
 				
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b
 				<button className="Button">Login</button>
 				
 			</form>
@@ -152,15 +138,6 @@ class LoginBar extends Component{
 		);
 	}
 }
-<<<<<<< HEAD
-
-const mapDispatchToProps = (dispatch) =>{
-	return {
-		onAuth:(email,password) => dispatch(action.auth(email,password))
-	}
-}
-export default connect(null,mapDispatchToProps)(LoginBar)
-=======
 const mapStateToProps=(state)=>{
 	return{
 		loading:state.loading,
@@ -175,4 +152,3 @@ const mapDispatchToProps = (dispatch) =>{
 	}
 }
 export default connect(mapStateToProps,mapDispatchToProps)(LoginBar)
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b

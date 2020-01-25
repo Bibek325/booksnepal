@@ -1,0 +1,25 @@
+.Item{
+	
+	
+	border:1px solid black;
+}
+.One{
+	height:6vh;
+	border:1px solid black;
+	display: flex;
+	justify-content: space-around;
+}
+.img,.aut,.tit,.des,.pri{
+	border:1px solid black;
+	width: 20vw;
+	text-align: center;
+}
+.Two{
+	display: flex;
+	
+	border:1px solid black;
+}
+.Three{
+	height:8vh;
+	border:1px solid black;
+}

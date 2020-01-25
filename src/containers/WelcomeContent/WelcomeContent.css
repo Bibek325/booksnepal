@@ -214,11 +214,7 @@ button::focus{
 	border-radius: 30px;
 	
 	border:none;
-<<<<<<< HEAD
-	border: .5px solid #05386B;
-=======
 	border: 1px solid #05386B;
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b
 	margin-left: 10vw;
 	height: 8vh;
 	z-index:;
@@ -230,11 +226,7 @@ button::focus{
 	font-family: 'Noto Sans', sans-serif;
 }
 .button:hover{
-<<<<<<< HEAD
-	background:blue;
-=======
 	text-decoration-line: underline;
->>>>>>> b2575cda3de87f6b9cc49ad88b48a5693dda665b
 }
 @media(max-width: 500px){
 	.head{
