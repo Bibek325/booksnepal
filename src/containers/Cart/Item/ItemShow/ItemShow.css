@@ -1,6 +1,6 @@
 .ShowItem{
 	width: 89.1vw;
-	
+	border:1px solid black;
 	height: 10vh;
 	display: flex;
 }
@@ -11,4 +11,14 @@
 }
 .des{
 	overflow:hidden;
+}
+.imgbi{
+	height: 10vh;
+	width: 17vw;
+}
+.imgbib{
+	padding-top: 0.4vh;
+	padding-left: 2vw;
+	height: 10vh;
+	width: 10vw;
 }

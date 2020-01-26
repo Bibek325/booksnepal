@@ -2,3 +2,14 @@
 	font-size: 30px;
 	font-weight: bolder;
 }
+.Checkout{
+	background: #718CF9;
+	width: 10%;
+	margin-top: 2vh;
+	margin-left: 70vw;
+	height: 5vh;
+	text-align: center;
+	cursor:pointer;
+	border-radius: 5px;
+	color: white;
+}
