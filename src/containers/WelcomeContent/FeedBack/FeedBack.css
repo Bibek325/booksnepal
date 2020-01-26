@@ -2,12 +2,18 @@
 	width: 50%;
 	height: 20px;
 	margin-bottom: 1%;
+	background-color: lightgreen;
 }
 .TextArea{
 	width: 90%;
 	height: 120px;
 	overflow: scroll;
+	background-color: lightgreen;
 }
 .Submit{
 	text-align:center;
+}
+.submit{
+	background-color: lightgreen;
+
 }
