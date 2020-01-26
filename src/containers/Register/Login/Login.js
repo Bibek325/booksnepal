@@ -135,6 +135,7 @@ class LoginBar extends Component{
 		<div className={attachedClass.join(' ')}>
 			<div className={css.Form}>
 				<form onSubmit={this.submitHandler}>
+				<p className={css.Title}>User Login</p>
 				{errorMessage}
 				{form}	
 				<button className={css.Button}>Login</button>
