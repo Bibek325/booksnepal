@@ -12,7 +12,7 @@ import RTSNotes from './containers/EBooks/CsitSixth/RTSNotes/RTSNotes'
 import NCCNotes from './containers/EBooks/CsitSixth/NCCNotes/NCCNotes'
 import CompilerNotes from './containers/EBooks/CsitSixth/CompilerNotes/CompilerNotes'
 import CompilerSyllabus from './containers/EBooks/CsitSixth/CompilerSyllabus/CompilerSyllabus'
-
+import axios from 'axios'
 import Survey from './containers/Survey/Survey'
 import Particles from 'react-particles-js';
 import CsitFirst from './containers/EBooks/CsitFirst/CsitFirst'
@@ -74,6 +74,11 @@ class App extends Component{
       delay: 0,
       smooth: 'easeInOutQuart'
     })
+    axios.delete('https://bookstore-12c74.firebaseio.com/cart.json')
+    .then(res=>{
+      console.log(res)
+    })
+    .catch()
   }
 
 
