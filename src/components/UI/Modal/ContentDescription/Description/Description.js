@@ -45,7 +45,7 @@ class Description extends Component{
 			<div className={css.div6}><strong>Price :</strong> Rs {this.props.bookinfo.price}/-</div>
 			<div className={css.div7}>
 					<div className={css.Cancel} onClick={this.props.clicked}>Cancel</div>
-					<div className={css.Order} onClick={this.orderHandler}>Order</div>
+					<div className={css.Order} onClick={this.orderHandler}>Add To cart</div>
 			</div>
 		</div>
 		);
