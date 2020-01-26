@@ -27,7 +27,7 @@ class FeedBackDisplay extends Component{
 		console.log(this.state.feedback)
 		return(
 		<div className={css.FeedBack}>
-			<div className={css.Text}>feedback</div>
+			<div className={css.Text}>Feedback</div>
 		<div className={css.FeedBackDisplay}>	{this.state.feedback.map(feedback=>(
 			
 					<FeedBackShow item={feedback}/>
