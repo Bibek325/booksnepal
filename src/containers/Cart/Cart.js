@@ -5,8 +5,11 @@ import {Link} from 'react-router-dom'
 import { connect } from 'react-redux'
 class Cart extends Component{
 	CheckoutHandler=()=>{
-		if(!this.props.isAuth){
+		if(!this.props.isAuth==true){
 			this.props.history.replace('/login')
+		}
+		else{
+			this.props.history.replace('/pending')	
 		}
 	}
 	render(){
@@ -14,7 +17,7 @@ class Cart extends Component{
 			<div classname={css.Cart}>
 				<div className={css.title}>Cart</div>
 				<div><Item/></div>
-				<Link to='/pending'><div className={css.Checkout} onClick={this.CheckoutHandler}>Checkout</div></Link>
+				<div className={css.Checkout} onClick={this.CheckoutHandler}>Checkout</div>
 			</div>
 			)
 	}
