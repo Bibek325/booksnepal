@@ -1,7 +1,7 @@
 .Input{
-	height: 8vh;
+	height: 7vh;
 	width: 100%;
-	padding-left:8vw;
+	padding-left:7vw;
 	box-sizing: border-box;
 }
 .Label{
@@ -17,10 +17,16 @@
 	
 	display: block;
 	width:80%;
+	border-radius: 10px;
+	height: 5vh;
+	text-align: center;
 }
 .InputElement:focus{
 	outline: none;
-	background-color: #ccc;
+	border:1px solid blue;
+	transition: .2s;
+	background-color: #EEEFF3 ;
+	box-shadow:0px 0px 1px blue;
 }
 .Invalid{
 	border:1px solid red;

@@ -4,3 +4,29 @@
 	text-decoration:underline;
 
 }
+.Error{
+	color:red;
+	margin-left: 7vw;
+}
+.Form{
+	margin-top:4vh;
+	border:1px solid #B4B6B1 ;
+	
+	border-radius: 10px;
+	width: 40%;
+	margin-left: 22vw;
+	padding-top: 2vw;
+	box-sizing: border-box;
+	box-shadow: 0px 1px 2px #B4B6B1;
+}
+.Button{
+	height: 5vh;
+	margin-left: 13vw;
+	background:#1B51C6 ;
+	margin-top: 4vh;
+	width: 10vw;
+	color:white;
+	margin-bottom: 5vh;
+	border:1px solid #1B51C6 ;
+	border-radius: 8px;
+}
