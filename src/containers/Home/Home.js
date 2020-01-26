@@ -16,6 +16,11 @@ class Home extends Component{
 		}
 
 	componentWillMount(){
+		 axios.delete('https://bookstore-12c74.firebaseio.com/cart.json')
+    .then(res=>{
+      console.log(res)
+    })
+    .catch()
 		axios.get('https://bookstore-12c74.firebaseio.com/NewBooks.json')
 		.then(res=>{
 			const fetchBooks=[];
