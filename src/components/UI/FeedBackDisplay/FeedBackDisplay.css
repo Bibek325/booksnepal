@@ -3,12 +3,12 @@
     z-index: 500;
     background-color:#D5D5D5;
     width: 20%;
-    height: 45vh;
+    height: 35vh;
     border-radius: 20px;
     box-shadow: 1px 1px 1px black;
     padding: 16px;
     left:10vw;
-    top:45vh;
+    top:55vh;
     
     box-sizing: border-box;
     transition: all 0.3s ease-out;
