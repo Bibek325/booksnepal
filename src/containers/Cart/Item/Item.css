@@ -21,5 +21,7 @@
 }
 .Three{
 	height:8vh;
-	border:1px solid black;
+	
+	text-align: right;
+	margin-right: 10vw;
 }
