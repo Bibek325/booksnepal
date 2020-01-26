@@ -15,7 +15,7 @@ class LoginBar extends Component{
 				elementType:'input',
 				elementConfig:{
 					type:'email',
-					placeholder:'username',
+					placeholder:'email-id',
 					
 				},
 				value:'',
