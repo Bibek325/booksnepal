@@ -33,6 +33,7 @@ class SideMenu extends Component{
 			<Link to='/Menu/feedback'><div className={css.CategoriesItems}>Feedback</div></Link>
 			<Link to='/Menu/new&updates'><div className={css.CategoriesItems}>News & Discussions</div></Link>
 			<Link to='/Menu/publicOpinions'><div className={css.CategoriesItems}>public opinions</div></Link>
+			<a href='https://drive.google.com/file/d/1AWuBL5GAjLRqU9voEDRXnG_9elqBXWVF/view?ts=5e2c0b30'target='_blank'><Link to='/Menu/Report'></Link><div className={css.CategoriesItems}> Project Report</div> </a>
 		</div>
 		</div>
 		);
