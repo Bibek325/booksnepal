@@ -51,8 +51,8 @@ class FeedBack extends Component{
 			<div>
 			<strong>FeedBack</strong>
 				<form onSubmit={this.orderHandler}>
-				<div className={css.Name}>Name:<input className={css.Text} type='textarea' onChange={(event)=>this.inputNameChangeHandler(event)}/></div>
-				<div className={css.Description}>Message:<textarea className={css.TextArea} onChange={(event)=>this.inputMessageChangeHandler(event)} rows='4'/></div>
+				<div className={css.Name}>Name:   <input className={css.Text} type='textarea' onChange={(event)=>this.inputNameChangeHandler(event)}/></div>
+				<div className={css.Description}>Message:   <textarea className={css.TextArea} onChange={(event)=>this.inputMessageChangeHandler(event)} rows='4'/></div>
 				<input onClick={this.props.backDropHandler} type='submit'className={css.submit}></input>
 				</form>
 			</div>
