@@ -6,9 +6,11 @@ import ItemShow from './ItemShow/ItemShow'
 class Item extends Component{
 	state={
 		cartData:[],
-		loading:true
+		loading:true,
+		total:0
 	}
 	componentWillMount(){
+
 		axios.get('https://bookstore-12c74.firebaseio.com/cart.json')
 		.then(res=>{
 			const fetchCart=[];
@@ -25,6 +27,7 @@ class Item extends Component{
 			
 	}
 	render(){
+
 		console.log(this.state.cartData)
 		return(
 			<div className={css.Item}>
@@ -39,12 +42,16 @@ class Item extends Component{
 				
 					<div className={css.FeedBackDisplay}>	{this.state.cartData.map(cartData=>(
 			
-					<ItemShow item={cartData}/>
+					  <ItemShow item={cartData}/>
+
+					
 					
 			))}
 			</div>
 				</div>
-				<div className={css.Three}></div>
+				<div className={css.Three}>Total: {this.state.cartData.reduce((sum,data) => {
+					return sum += data.price 
+				},0)} </div>
 			</div>
 			)
 	}
